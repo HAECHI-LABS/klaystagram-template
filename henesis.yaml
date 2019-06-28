@@ -1,0 +1,37 @@
+version: v1
+name: klaystagram
+
+contract:
+  address: '0x'
+  path: ./contracts/klaystagram.sol
+  name: klaystagram
+  compilerVersion: 0.4.24
+
+blockchain:
+  platform: klaytn
+  network: mainnet
+
+handlers:
+  event1:
+    event: PhotoUploaded(uint256,bytes,string,string,string,uint256)
+    # If you want to include additional logic, you need to uncomment it.
+    # version: v1
+    # runtime: tsnode8
+    # path: ./handlers/photoUploaded.ts
+    # dep: ./handlers/package.json
+    # function: photoUploaded
+
+  event2:
+    event: Transfer(address,address,uint256)
+
+  event3:
+    event: Approval(address,address,uint256)
+
+  event4:
+    event: ApprovalForAll(address,address,bool)
+
+webhook:
+  url: https://localhost:8080
+  method: POST
+  headers: 
+    Authorization: 'Bearer YOUR-OWN-TOKEN'
