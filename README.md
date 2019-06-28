@@ -1,4 +1,4 @@
-# Klaystagram template for Klaytn.
+# Klaystagram template for henesis(klaytn)
 
 The repository is the initialization template of henesis.
 
