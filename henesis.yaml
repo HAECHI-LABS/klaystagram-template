@@ -9,7 +9,7 @@ contract:
 
 blockchain:
   platform: klaytn
-  network: baobob
+  network: baobab
 
 handlers:
   event1:
